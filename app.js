@@ -9,3 +9,4 @@ if (numeroSecreto == chute) { //caso a condição seja verdadeira, a mensagem ir
 } else {
     alert('Que pena, você errou!')
 }
+//este comentário é um teste para salvar repo no github
