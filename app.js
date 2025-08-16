@@ -1,12 +1,22 @@
 alert('Boas vindas ao jogo do Número Secreto. Boa sorte!');
 let numeroSecreto = 4;
 console.log(numeroSecreto);
-let chute = prompt('Escolha um número entre 1 e 10');
+let chute; 
+let tentativa = 1;
 
-//Se o chute for igual ao número secreto, executa a ação
-if (numeroSecreto == chute) { //caso a condição seja verdadeira, a mensagem irá aparecer no console
-    alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto}`);
-} else {
-    alert('Que pena, você errou!')
+//enquanto o chute não for igual ao número secreto, o jogo continua até o jogador acertar
+while (chute != numeroSecreto) {
+    chute = prompt('Escolha um número entre 1 e 10');
+    //Se o chute for igual ao número secreto, executa a ação
+    if (chute == numeroSecreto) { //caso a condição seja verdadeira, a mensagem irá aparecer no console
+    alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} tentativas`);
+    } else {
+        if(chute > numeroSecreto) {
+            alert(`O número secreto é menor que ${chute}`);
+        } else {
+            alert(`O número secreto é maior que ${chute}`);
+        }
+        tentativa = tentativa++; //toda vez que for atribuir um valor à uma variavel e somar +1, a sintaxe é: variavel++
+    }
 }
 
