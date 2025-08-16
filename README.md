@@ -1,0 +1,1 @@
+Desenvolvimento de um game de adivinhação de números aleatórios chamado "Número Secreto". Este jogo é um exercício criado pela plataforma Alura com o objetivo de ensinar lógica de programação baseada na linguagem javascript.
