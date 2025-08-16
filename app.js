@@ -1,5 +1,5 @@
 alert('Boas vindas ao jogo do Número Secreto. Boa sorte!');
-let numeroSecreto = 8;
+let numeroSecreto = 4;
 console.log(numeroSecreto);
 let chute = prompt('Escolha um número entre 1 e 10');
 
@@ -9,4 +9,4 @@ if (numeroSecreto == chute) { //caso a condição seja verdadeira, a mensagem ir
 } else {
     alert('Que pena, você errou!')
 }
-//este comentário é um teste para salvar repo no github
+
