@@ -9,14 +9,22 @@ while (chute != numeroSecreto) {
     chute = prompt('Escolha um número entre 1 e 10');
     //Se o chute for igual ao número secreto, executa a ação
     if (chute == numeroSecreto) { //caso a condição seja verdadeira, a mensagem irá aparecer no console
-    alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} tentativas`);
+        break;
     } else {
         if(chute > numeroSecreto) {
             alert(`O número secreto é menor que ${chute}`);
         } else {
             alert(`O número secreto é maior que ${chute}`);
         }
-        tentativa = tentativa++; //toda vez que for atribuir um valor à uma variavel e somar +1, a sintaxe é: variavel++
+        tentativa++; //toda vez que for atribuir um valor à uma variavel e somar +1, a sintaxe é: variavel++
     }
 }
 
+ let palavraTentativa = tentativa > 1 ? 'tentativas' : 'tentativa'; //operador ternário
+ alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} ${palavraTentativa}`);
+
+// if (tentativa > 1) {
+//     alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} tentativas`);
+// } else {
+//     alert(`Parabéns! Você descobriu o número secreto ${numeroSecreto} com ${tentativa} tentativa`);
+// }
